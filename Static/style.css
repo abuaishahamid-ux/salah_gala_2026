@@ -1,0 +1,14 @@
+body {
+background: linear-gradient(to right, #064420, #0B8457);
+color: white;
+text-align: center;
+font-family: Arial;
+}
+button {
+background: gold;
+color: black;
+padding: 10px;
+margin: 10px;
+border-radius: 8px;
+border: none;
+}
