@@ -1,0 +1,10 @@
+
+<h2>Dashboard 2026</h2>
+<h3>Teams</h3>
+{% for team in teams %}
+<p>{{ team[1] }} - {{ team[4] }}</p>
+{% endfor %}
+<h3>Players</h3>
+{% for player in players %}
+<p>{{ player[1] }} - {{ player[2] }}</p>
+{% endfor %}
