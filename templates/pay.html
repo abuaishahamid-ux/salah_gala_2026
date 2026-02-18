@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://js.paystack.co/v1/inline.js"></script>
+</head>
+<body>
+<h2>Complete Payment</h2>
+<button onclick="payWithPaystack()">Pay Now</button>
+<script>
+function payWithPaystack(){
+var handler = PaystackPop.setup({
+key: "{{ public_key }}",
+email: "player@example.com",
+amount: 5000 * 100,
+metadata: {pin: "{{ pin }}"},
+callback: function(response){
+window.location.href = "/verify?reference=" + response.reference;
+},
+});
+handler.openIframe();
+}
+</script>
+</body>
+</html>
